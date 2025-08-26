@@ -17,4 +17,4 @@ def get_bars_and_stripes(n):
     bars = bars.reshape(2**n * n, 1)
     bars = np.repeat(bars, n, 1)
     bars = bars.reshape(2**n, n * n)
-    return np.vstack((stripes[0:stripes.shape[0] - 1], bars[1:bars.shape[0]]))
+    return np.vstack((stripes[0 : stripes.shape[0] - 1], bars[1 : bars.shape[0]]))
